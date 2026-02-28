@@ -1,2 +1,2 @@
 # ideax-service
-Ideax Backend Service Class
+Ideax Backend Service
