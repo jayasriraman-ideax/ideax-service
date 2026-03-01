@@ -1,23 +1,18 @@
 package com.ideax.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Map;
 
+@Data
 public class HealthDto {
+    String status;
+    String timestamp;
 
-    private Map<String, String> message;
-
-    public HealthDto() {
-    }
-
-    public HealthDto(Map<String, String> message) {
-        this.message = message;
-    }
-
-    public Map<String, String> getMessage() {
-        return message;
-    }
-
-    public void setMessage(Map<String, String> message) {
-        this.message = message;
+    public HealthDto() {}
+    public HealthDto(String status, String timestamp) {
     }
 }
